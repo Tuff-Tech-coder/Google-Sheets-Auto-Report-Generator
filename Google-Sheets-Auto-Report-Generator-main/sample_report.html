@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sales Performance Report</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+         margin: 0; padding: 0; background: #f5f7fa; color: #333; }
+  .container { max-width: 900px; margin: 0 auto; padding: 24px; }
+  .header { background: linear-gradient(135deg, #1a3a5c 0%, #2d6a9f 100%);
+             color: white; padding: 32px; border-radius: 8px; margin-bottom: 24px; }
+  .header h1 { margin: 0 0 8px 0; font-size: 28px; }
+  .header p { margin: 0; opacity: 0.8; font-size: 14px; }
+  .kpi-row { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 24px; }
+  .kpi-card { background: white; border-radius: 8px; padding: 20px 24px;
+               flex: 1; min-width: 140px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+  .kpi-label { font-size: 12px; color: #888; text-transform: uppercase;
+                letter-spacing: 0.05em; margin-bottom: 8px; }
+  .kpi-value { font-size: 24px; font-weight: 700; color: #1a3a5c; }
+  .kpi-value.green { color: #2d9e6b; }
+  .section { background: white; border-radius: 8px; padding: 24px;
+              margin-bottom: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+  .section h2 { margin: 0 0 16px 0; font-size: 18px; color: #1a3a5c; border-bottom: 2px solid #e8edf2; padding-bottom: 12px; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  thead th { background: #1a3a5c; color: white; padding: 10px 14px; text-align: left; }
+  tbody tr:nth-child(even) { background: #f7fafc; }
+  tbody td { padding: 9px 14px; border-bottom: 1px solid #eee; }
+  .callout { background: #fef9e7; border-left: 4px solid #f1c40f; padding: 14px 18px;
+              border-radius: 4px; margin-bottom: 16px; }
+  .footer { text-align: center; color: #aaa; font-size: 12px; margin-top: 32px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>Sales Performance Report</h1>
+    <p>Period: Jan 03, 2024 – Mar 25, 2024
+       &nbsp;|&nbsp; Generated: May 13, 2026 at 02:38 PM</p>
+  </div>
+
+  
+    <div class="kpi-row">
+        <div class="kpi-card">
+            <div class="kpi-label">Total Revenue</div>
+            <div class="kpi-value">$225,700.00</div>
+        </div>
+        <div class="kpi-card">
+            <div class="kpi-label">Total Profit</div>
+            <div class="kpi-value green">$141,060.00</div>
+        </div>
+        <div class="kpi-card">
+            <div class="kpi-label">Profit Margin</div>
+            <div class="kpi-value">62.5%</div>
+        </div>
+        <div class="kpi-card">
+            <div class="kpi-label">Units Sold</div>
+            <div class="kpi-value">900</div>
+        </div>
+        <div class="kpi-card">
+            <div class="kpi-label">Transactions</div>
+            <div class="kpi-value">30</div>
+        </div>
+    </div>
+    
+  
+        <div class="callout">
+            🏆 Top Performer: <strong>Eve Davis</strong>
+            with <strong>$32,100.00</strong> in revenue
+        </div>
+        
+
+  <div class="section">
+    <h2>Revenue by Region</h2>
+    <table><thead><tr><th>Region</th><th>Total Revenue</th></tr></thead><tbody><tr><td>South</td><td>$66,400.00</td></tr><tr><td>East</td><td>$60,900.00</td></tr><tr><td>North</td><td>$59,700.00</td></tr><tr><td>West</td><td>$38,700.00</td></tr></tbody></table>
+  </div>
+
+  <div class="section">
+    <h2>Revenue by Product</h2>
+    <table><thead><tr><th>Product</th><th>Revenue</th><th>Units Sold</th></tr></thead><tbody><tr><td>Gadget Plus</td><td>$108,900.00</td><td>363</td></tr><tr><td>Widget Pro</td><td>$88,600.00</td><td>443</td></tr><tr><td>Service Pack</td><td>$28,200.00</td><td>94</td></tr></tbody></table>
+  </div>
+
+  <div class="section">
+    <h2>Top Sales Representatives</h2>
+    <table><thead><tr><th>Salesperson</th><th>Revenue</th><th>Profit</th></tr></thead><tbody><tr><td>Eve Davis</td><td>$32,100.00</td><td>$19,260.00</td></tr><tr><td>Irene Park</td><td>$30,300.00</td><td>$18,180.00</td></tr><tr><td>Bob Smith</td><td>$29,800.00</td><td>$17,880.00</td></tr><tr><td>Carol White</td><td>$22,800.00</td><td>$14,880.00</td></tr><tr><td>Henry Chen</td><td>$22,300.00</td><td>$13,920.00</td></tr><tr><td>Alice Johnson</td><td>$18,600.00</td><td>$11,520.00</td></tr><tr><td>Dave Brown</td><td>$18,300.00</td><td>$12,540.00</td></tr><tr><td>Jake Wu</td><td>$17,900.00</td><td>$11,640.00</td></tr><tr><td>Frank Lee</td><td>$16,800.00</td><td>$10,680.00</td></tr><tr><td>Grace Kim</td><td>$16,800.00</td><td>$10,560.00</td></tr></tbody></table>
+  </div>
+
+  <div class="footer">
+    <p>This report was generated automatically by the Google Sheets Auto-Reporter.</p>
+  </div>
+</div>
+</body>
+</html>
