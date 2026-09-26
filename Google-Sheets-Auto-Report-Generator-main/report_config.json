@@ -1,0 +1,14 @@
+{
+  "sheet_name": "Sheet1",
+  "report_title": "Sales Performance Report",
+  "email": {
+    "smtp_server": "smtp.gmail.com",
+    "smtp_port": 587,
+    "sender_email": "your_email@gmail.com",
+    "recipients": [
+      "manager@yourcompany.com",
+      "director@yourcompany.com"
+    ],
+    "subject": "Automated Sales Report — {date}"
+  }
+}
